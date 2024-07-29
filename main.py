@@ -15,7 +15,7 @@ from pageset import MainPage
 from settings import SettingsPage
 from functions import Functions
 from clientapps import SatNOGS_Client, KISSclient
-from dataformat import ID53106, ID43132, ID54684, ID49069
+from dataformat import ID53106, ID49069
 
 VERSION = "v.1.0.18"
 
