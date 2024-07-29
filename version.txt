@@ -1,0 +1,26 @@
+##########################################################
+###        TLMForwarder by JE3HCZ Version list         ###
+##########################################################
+v.1.0.12	[終了]作業を必ず行うため［閉じる X］を無効にした
+
+v.1.0.11	LogDirをGUIダイアログから設定可能に変更
+v.1.0.10	IO-117 telemetry検出条件 761A + 3612 に変更
+v.1.0.9		アプリケーションの開始場所を前回終了時の位置とする
+v.1.0.8 	自動的にカレントディレクトリの下にlogフォルダを作成
+			KISS Raw dataを保存し、別途.hexファイルを自動作成
+			digipeater.log, forwarding.log(前telemetory.log)
+			とともに4ファイルを格納
+			soundomodemを終了しないと終了できなかった件を解決
+v.1.0.7 	logメッセージをfileに保存
+			kissport.log  : KISS portから受信した直後のデータ
+			telemetry.log : payload data
+			digipeater.log: QSO dataの表示用python list 
+v.1.0.6 	各衛星別にクラス化出来る様仕様を変更。IO-117で 101
+			及び76バイトデータはPORT 8, 6バイトデータはPORT 4
+			へ送る様変更（暫定テスト）--> 443(指定なし)に戻す
+v.1.0.5 	選択した衛星を保存し次回の初期値になる様変更
+v.1.0.4 	転送時のレスポンス待ち時間を3秒に変更
+v.1.0.3 	v.1.0.2修正時のロジックミスを訂正
+v.1.0.2 	forwarding == no 時でも forward されるバグの修正
+v.1.0.1 	ttk.style fieldbackgroundの反映に関する修正
+v.1.0.0		Release Candidate	JA3DTW局へ提供
