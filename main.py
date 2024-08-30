@@ -254,7 +254,7 @@ class Main(tk.Tk):
 			lbl_conn.place(x=200, y=455)
 
 		# logファイル名に使用するUTC時刻（プログラム開始時）
-		utc = datetime.now(timezone.utc) 
+		utc = datetime.now(timezone.utc)
 		log_time = utc.strftime('%Y-%m-%dT%H%M%SZ')
 
 		# log フォルダの作成(既存でもOK)
