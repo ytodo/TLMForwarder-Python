@@ -70,9 +70,15 @@ class Main(tk.Tk):
 	#
 		##### 説明表示入りの画像を作成保存 #####################
 
-		# 画像と文字を表示するためのフォント指定
-		font1 = ImageFont.truetype("arial.ttf", 10)
-		font2 = ImageFont.truetype("arial.ttf", 12)
+		# 画像と文字を表示するためのフォント指定(Windows)
+		if os.name == 'nt':
+			font1 = ImageFont.truetype("arial.ttf", 10)
+			font2 = ImageFont.truetype("arial.ttf", 12)
+
+		# 画像と文字を表示するためのフォント指定(Linux)
+		elif  os.name == 'posix':
+			font1 = ImageFont.truetype("NotoSans-Regular.ttf", 10)
+			font2 = ImageFont.truetype("NotoSans-Regular.ttf", 12)
 
 		# frame2の画像を読み込む
 		frame2 = Image.open("image.png")
